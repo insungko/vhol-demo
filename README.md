@@ -74,6 +74,8 @@ Please replace the placeholder with your own bucket name for the policy to work 
 </details>
 
 3. Set up your GitHub secrets
+3a. Install protobuf: python3 -m pip install protobuf==4.25.3
+3a. Install dbt-snowflake adapter
 
 4. Run the below to build your dbt project on the `main` branch
 
@@ -88,7 +90,7 @@ dbt build --target prod
 6. Run the below to switch branches and test your CI pipelines
 
 ```bash
-git checkout -b feature/your-feature
+git checkout -b feature/sql-change
 ```
 
 7. Make some changes to your dbt models and push to your remote repository. You can copy and paste the examples here and run it locally: [example_dbt_changes](example_dbt_changes/)
