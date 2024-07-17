@@ -33,7 +33,7 @@ WITH orgs AS (
 )
 
 
-SELECT TOP 10
+SELECT
     org_id
     , created_at
     , num_users
@@ -42,4 +42,4 @@ SELECT TOP 10
     , sub_price
 FROM orgs
 LEFT JOIN user_count USING (org_id)
-LEFT JOIN subscriptions USING (org_id) 
+LEFT JOIN subscriptions USING (org_id)
