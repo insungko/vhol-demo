@@ -74,7 +74,7 @@ Please replace the placeholder with your own bucket name for the policy to work 
 </details>
 
 3. Set up your GitHub secrets
-3a. Install protobuf python3 -m pip install protobuf==4.25.3
+3a. Install protobuf: python3 -m pip install protobuf==4.25.3
 
 4. Run the below to build your dbt project on the `main` branch
 
