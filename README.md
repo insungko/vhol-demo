@@ -88,7 +88,7 @@ dbt build --target prod
 6. Run the below to switch branches and test your CI pipelines
 
 ```bash
-git checkout -b feature/your-feature
+git checkout -b feature/sql-change
 ```
 
 7. Make some changes to your dbt models and push to your remote repository. You can copy and paste the examples here and run it locally: [example_dbt_changes](example_dbt_changes/)
