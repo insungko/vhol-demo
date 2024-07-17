@@ -33,7 +33,7 @@ WITH orgs AS (
 )
 
 
-SELECT
+SELECT TOP 10
     org_id
     , created_at
     , num_users
