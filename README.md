@@ -49,13 +49,13 @@ source venv/bin/activate
             "Sid": "ListObjectsInBucket",
             "Effect": "Allow",
             "Action": ["s3:ListBucket"],
-            "Resource": ["arn:aws:s3:::vhol-datafold-dbt-prod-manifest"] # TODO: replace with your own bucket name
+            "Resource": ["arn:aws:s3:::vhol-prod-manifest-demo"] # TODO: replace with your own bucket name
         },
         {
             "Sid": "AllObjectActions",
             "Effect": "Allow",
             "Action": "s3:*Object",
-            "Resource": ["arn:aws:s3:::vhol-datafold-dbt-prod-manifest/*"] # TODO: replace with your own bucket name
+            "Resource": ["arn:aws:s3:::vhol-prod-manifest-demo/*"] # TODO: replace with your own bucket name
         }
     ]
 }

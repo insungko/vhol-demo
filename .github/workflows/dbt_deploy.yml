@@ -46,7 +46,7 @@ jobs:
       - name: submit artifacts to datafold
         run: |
           set -ex
-          datafold dbt upload --ci-config-id 345 --run-type ${DATAFOLD_RUN_TYPE} --commit-sha ${GIT_SHA}
+          datafold dbt upload --ci-config-id 8350 --run-type ${DATAFOLD_RUN_TYPE} --commit-sha ${GIT_SHA}
         env: # TODO: update your GitHub secrets to include DATAFOLD_APIKEY
           DATAFOLD_APIKEY: ${{ secrets.DATAFOLD_APIKEY }}
           DATAFOLD_RUN_TYPE: "${{ 'production' }}"
@@ -57,7 +57,7 @@ jobs:
       # TODO: update your GitHub secrets to include AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
       - name: Upload manifest to S3
         run: |
-          aws s3 cp target/manifest.json s3://vhol-datafold-dbt-prod-manifest/manifest.json
+          aws s3 cp target/manifest.json s3://vhol-prod-manifest-demo/manifest.json
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
