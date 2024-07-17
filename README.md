@@ -12,7 +12,6 @@ You should be able to run this self-contained example, use the `yml` workflow fi
 - GitHub Actions
 - Datafold Cloud
 - AWS S3
-- Massive Brain
 
 If you have questions unique to your tech stack, schedule a call with us at: [Datafold](https://www.datafold.com/)
 
